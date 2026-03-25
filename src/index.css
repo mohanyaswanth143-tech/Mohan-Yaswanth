@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+@layer utilities {
+  .neon-text-cyan {
+    text-shadow: 0 0 5px theme('colors.cyan.400'), 0 0 20px theme('colors.cyan.600');
+  }
+  .neon-text-pink {
+    text-shadow: 0 0 5px theme('colors.pink.400'), 0 0 20px theme('colors.pink.600');
+  }
+  .neon-text-green {
+    text-shadow: 0 0 5px theme('colors.green.400'), 0 0 20px theme('colors.green.600');
+  }
+  .neon-border-cyan {
+    box-shadow: 0 0 5px theme('colors.cyan.400'), inset 0 0 5px theme('colors.cyan.400');
+  }
+  .neon-border-pink {
+    box-shadow: 0 0 5px theme('colors.pink.400'), inset 0 0 5px theme('colors.pink.400');
+  }
+  .neon-bg-green {
+    box-shadow: 0 0 10px theme('colors.green.400'), 0 0 20px theme('colors.green.500');
+  }
+  .neon-bg-pink {
+    box-shadow: 0 0 10px theme('colors.pink.400'), 0 0 20px theme('colors.pink.500');
+  }
+}
+
+body {
+  background-color: #050505;
+  color: #fff;
+  overflow: hidden;
+}
